@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizCovid</title>
+    <link rel="stylesheet" href="quizcovid.css">
+</head>
+<body>
+    <header>
+		<nav>
+			<img src="undraw_secure_login_pdn4-removebg-preview.png" width="200" alt="logo">
+			<ul>
+				<li><a href="#"> Accueil</a></li>
+				<li><a href="#"> Services</a></li>
+				<li><a href="#"> Publications</a></li>
+				<li><a href="#"> Bibliothèque</a></li>
+				<li><a href="#"> Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+    <h1>Quiz Covid-19</h1>
+    <form id="quizz">
+        <div class="Q1">
+            <h3>Question 1</h3>
+            <label for="température">(Température en degre°c)</label>
+            <input type="number" name="température" id="température" required>
+        </div>
+        <div>
+            <h3>Question 2</h3>
+            <label for="symptome">Symptome?</label>
+            <select id="symptome">
+                <option name="symptome" value="oui">Oui</option>
+                <option name="symptome" value="non">Non</option>
+            </select>
+            <h3>Question 3</h3>
+            <label>Avez-vous ete en contact avec une personne malade dans les derniéres jours?</label><br>
+            <select id="contact">
+                <option name="contact" value="oui">Oui</option>
+                <option name="contact" value="non">Non</option>
+            </select>
+            <h3>Question 4</h3>
+            <label> Avez-vous voyagé dans les dérniéres jours?</label><br>
+            <select id="voyage">
+               <option name="voyage" value="oui">Oui</option>
+               <option name="voyage" value="non">Non</option>
+            </select><br>
+            <input type="submit" value="Valider" id="bouton envoi">
+        </div>
+        <p id="résultats">Résultats du quiz</p>
+    </form>
+    <script src="quizcovid.js"></script>
+</body>
+</html>
